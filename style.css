@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #092438;
+  background-image: linear-gradient(to bottom, rgba(48, 50, 51, 0.86), #0b0d0f);
+  z-index: -1;
+}
+  
+
+svg {
+  fill: white;
+  height: 1.5rem;
+}
+
+body {
+  cursor: none;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-flow: column;
+  color: white;
+  line-height: 1.4;
+  /*background: center url(img/Background.webp); */
+  font-family: "Roboto Mono", monospace;
+  padding: 5rem;
+  height: 100vh;
+  gap: 6rem;
+}
+
+name-title {
+  font-size: 8rem;
+}
+aboutme-title {
+  font-size: 8rem;
+}
+
+.content-text-animation{
+  display: flex;
+}
+.writing-bar{
+  display: flex;
+  width: 3px;
+  height: 70px;
+  margin-left: 5px;
+  background-color: white;
+  transform: rotateZ('10deg');
+  animation: bar-animation 1s ease infinite;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  height: 2rem;
+  padding: 2rem;
+
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+li a {
+  display: inline-block;
+  cursor: none;
+  color: white;
+  text-decoration: none;
+  background: no-repeat bottom center/0% 1px linear-gradient(white, white);
+  padding-block: 0.5rem;
+  transition: 0.5s;
+}
+
+li a:hover {
+  background: no-repeat bottom left/100% 1px linear-gradient(white, white);
+  transform: scale(1.1);
+}
+
+nav a svg {
+  transition: transform 0.4s ease;
+}
+
+nav a svg:hover {
+  transform: scale(2);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  width: 850px;
+}
+
+footer {
+  display: flex;
+  gap: 2rem;
+}
+
+footer a {
+  cursor: none;
+}
+
+footer svg {
+  transition: transform 0.4s ease;
+}
+
+footer svg:hover {
+  transform: scale(2);
+}
+
+.cursor-outline {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+/* .content:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: .5;
+} 
+
+.content:hover ~ .cursor2{
+  opacity: 0;
+}  */
+
+.name-title {
+  font-size: 6rem;
+  margin-right: .5em;;
+}
+
+.typewriter {
+  display: flex;
+  align-items: center;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.info a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  transition: transform 0.4s ease;
+}
+
+.about-me:hover{
+  transform: scale(1.3);
+}
+
+.name-title__desc {
+  margin-bottom: 3rem;
+}
+
+.info {
+  flex: 1;
+}
+
+.about-me svg {
+  animation: bounce 1s both infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0%);
+  }
+
+ 50% {
+  transform: translateX(40%);
+ }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes bar-animation {
+  50% {
+    height: 20px;
+  }
+}
