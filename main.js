@@ -1,3 +1,4 @@
+//CURSOR ANIMATION
 function handleCursor(e) {
   const $cursor_outline = document.querySelector(".cursor-outline");
   const $cursor_dot = document.querySelector(".cursor-dot");
@@ -26,7 +27,7 @@ function handleCursor(e) {
 
 document.addEventListener("mousemove", handleCursor);
 
-
+//ANIMATION NAME
 function animation(){
   let textAnimation = [
     ["J","U","A","N"," ","M","A",],
