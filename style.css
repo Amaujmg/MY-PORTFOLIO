@@ -194,9 +194,19 @@ footer svg:hover {
   flex: 1;
 }
 
+.info-aboutme{
+  flex: 1;
+}
+
+.aboutme-title {
+  font-size: 6rem;
+  margin-right: .5em;
+}
+
 .about-me svg {
   animation: bounce 1s both infinite;
 }
+
 
 .iconos svg{
   width: 150px;
