@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -65,6 +65,7 @@ nav {
   height: 2rem;
   padding: 2rem;
 
+
 }
 
 ul {
@@ -106,6 +107,7 @@ main {
 footer {
   display: flex;
   gap: 2rem;
+  padding-bottom: 30px;
 }
 
 footer a {
@@ -194,6 +196,11 @@ footer svg:hover {
 
 .about-me svg {
   animation: bounce 1s both infinite;
+}
+
+.iconos svg{
+  width: 150px;
+  height: 150px;
 }
 
 @keyframes bounce {

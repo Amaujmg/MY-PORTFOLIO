@@ -30,8 +30,8 @@ document.addEventListener("mousemove", handleCursor);
 //ANIMATION NAME
 function animation(){
   let textAnimation = [
-    ["J","U","A","N"," ","M","A",],
-    ["A","M","A","U","J"]
+    ["J","U","A","N"," ","M","A","!"],
+    ["A","M","A","U","J","!"]
   ];
   
   let letraContador = -1;
