@@ -170,6 +170,9 @@ footer svg:hover {
   color: currentColor;
 }
 
+/* ABOUT ME PAGE */
+
+
 .about-me {
   display: flex;
   align-items: center;
@@ -200,8 +203,6 @@ footer svg:hover {
   margin-right: 0.5em;
 }
 
-
-
 .about-me svg {
   animation: bounce 1s both infinite;
 }
@@ -219,6 +220,10 @@ footer svg:hover {
   display: flex;
   align-items: center;
   margin-bottom: 4rem;
+  transition: transform 0.4s ease;
+}
+.estudios:hover{
+  transform: scale(1.1);
 }
 
 .estudios img {
@@ -259,6 +264,11 @@ footer svg:hover {
 .experiencia-laboral {
   display: flex;
   align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.experiencia-laboral:hover {
+  transform: scale(1.1);
 }
 
 .experiencia-laboral img {
