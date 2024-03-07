@@ -29,18 +29,9 @@
     >
       <defs>
         <linearGradient id="bg">
-          <stop
-            offset="0%"
-            style="stop-color: rgba(72, 29, 4, 0.06)"
-          ></stop>
-          <stop
-            offset="50%"
-            style="stop-color: rgba(80, 40, 10, 0.6)"
-          ></stop>
-          <stop
-            offset="100%"
-            style="stop-color: rgba(85, 40, 7, 0.2)"
-          ></stop>
+          <stop offset="0%" style="stop-color: rgba(66, 72, 242, 0.06)"></stop>
+          <stop offset="50%" style="stop-color: rgba(37, 34, 143, 0.6)"></stop>
+          <stop offset="100%" style="stop-color: rgba(81, 84, 251, 0.2)"></stop>
         </linearGradient>
         <path
           id="wave"
@@ -115,37 +106,109 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="about-me-main">
+      <h1 class="aboutme-title">Sobre Mi.</h1>
       <section class="info-aboutme">
-        <h1 class="aboutme-title">Sobre Mi</h1>
-        <section class="Estudios">
-          <h2>Estudios</h2>
-          <p>
-            Soy Tecnólogo en Desarrollo de Software, graduado del Instituto
-            Universitario Pascual Bravo
-          </p>
+        <div class="estudios">
+          <div>
+            <h2 class="estudios-title">
+              Estudios
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M4 11.3333L0 9L12 2L24 9V17.5H22V10.1667L20 11.3333V18.0113L19.7774 18.2864C17.9457 20.5499 15.1418 22 12 22C8.85817 22 6.05429 20.5499 4.22263 18.2864L4 18.0113V11.3333ZM6 12.5V17.2917C7.46721 18.954 9.61112 20 12 20C14.3889 20 16.5328 18.954 18 17.2917V12.5L12 16L6 12.5ZM3.96927 9L12 13.6846L20.0307 9L12 4.31541L3.96927 9Z"
+              ></path>
+            </svg>
+            </h2>
+            <p class="info-estudios">
+              Soy Tecnólogo en Desarrollo de Software, graduado del Instituto
+              Universitario Pascual Bravo en 2023. Actualmente, estoy cursando
+              el séptimo semestre de Ingeniería en Desarrollo de Software.
+            </p>
+            <a
+              class="diploma-tecnologia"
+              href="PDF/DIPLOMA TECNOLOGIA.pdf"
+              target="_blank"
+            >
+              VER DIPLOMA.
+            </a>
+          </div>
           <a href="https://pascualbravo.edu.co/" target="_blank">
             <img src="img/LOGOPASCUALBLANCO.png" alt="LOGO PASCUAL BRAVO" />
           </a>
-        </section>
+        </div>
 
-        <section class="Experiencia Laboral">
-          <h2>Experiencia Laboral</h2>
-          <p class="aboutme-title__desc">
-            con más de un año de experiencia en PersonalSoft. Comencé como
-            practicante y fui contratado debido a mi destacado desempeño,
-            ascendiendo luego a Trainee/Junior como Analista de Datos y
-            desarrollador Power Plaftorm. Destaco en el uso de Power BI, bases
-            de datos (MySQL, SQL Server), Python (Pandas, Data Azure Factory),
-            así como en el entorno de Power Platform (Power Automate, Power
-            Apps). Además, poseo habilidades en desarrollo web (HTML5, CSS, PHP,
-            JavaScript) y experiencia en C# y Android Studio. Además, tengo
-            conocimientos en el lenguaje DAX y M, así como experiencia en la
-            implementación de soluciones RPA. Mi enfoque proactivo y compromiso
-            con el aprendizaje continuo me convierten en un profesional versátil
-            y orientado al éxito en el desarrollo de software.
-          </p>
-        </section>
+        <div class="experiencia-laboral">
+          <a href="https://personalsoft.com/co/" target="_blank">
+            <img src="img/PersonalsoftLogo.png" alt="LOGO PERSONALSOFT" />
+          </a>
+          <div>
+            <h2 class="job-title">
+              Experiencia Laboral
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M7 5V2C7 1.44772 7.44772 1 8 1H16C16.5523 1 17 1.44772 17 2V5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V6C2 5.44772 2.44772 5 3 5H7ZM9 13H4V19H20V13H15V16H9V13ZM20 7H4V11H9V9H15V11H20V7ZM11 11V14H13V11H11ZM9 3V5H15V3H9Z"
+              ></path>
+            </svg>
+            </h2>
+
+            <h3 class="title-practicante">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"
+                ></path>
+              </svg>
+
+              Marzo a Agosto 2022 Como Practicante.
+            </h3>
+            <p class="info-practicas">
+              Comencé en Personalsoft durante mis prácticas universitarias.
+              Adquirí experiencia en bases de datos con SQL Server y MySQL,
+              extracción y transformación de datos con Python(Pandas,Anaconda),
+              Azure y Data Factory, y visualización de datos con Power BI.
+              También exploré Power Platform, desarrollando una aplicación para
+              Sura Colombia que me permitió destacarme en la empresa.
+            </p>
+          </div>
+        </div>
+        <h3 class="title-trainee">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"
+            ></path>
+          </svg>
+          Octubre 2022 - Mayo 2023 Como Trainee.
+        </h3>
+        <p class="info-trainee">
+          Después de destacarme en mi desempeño, fui contratado como Trainee,
+          desempeñando funciones tanto de Analista de Datos como de
+          desarrollador en Power Platform. Durante este tiempo, utilicé
+          herramientas como Power BI, bases de datos como MySQL y SQL Server,
+          Python con énfasis en Pandas, Data Azure Factory, y trabajé en el
+          entorno de Power Platform, incluyendo Power Automate y Power Apps.
+        </p>
+        <a
+          class="certificado-personalsof"
+          href="PDF/CertificadoTrabajoPersonalsoft.pdf"
+          target="_blank"
+        >
+          VER CERTIFICADO.
+        </a>
       </section>
     </main>
 

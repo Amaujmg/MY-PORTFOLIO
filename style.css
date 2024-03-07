@@ -11,11 +11,10 @@
   height: 100%;
   box-sizing: border-box;
   display: block;
-  background-color: #092438;
+  background-color: #494040;
   background-image: linear-gradient(to bottom, rgba(48, 50, 51, 0.86), #0b0d0f);
   z-index: -1;
 }
-  
 
 svg {
   fill: white;
@@ -37,23 +36,23 @@ body {
   gap: 6rem;
 }
 
-name-title {
+.name-title {
   font-size: 8rem;
 }
-aboutme-title {
+.aboutme-title {
   font-size: 8rem;
 }
 
-.content-text-animation{
+.content-text-animation {
   display: flex;
 }
-.writing-bar{
+.writing-bar {
   display: flex;
   width: 3px;
   height: 70px;
   margin-left: 5px;
   background-color: white;
-  transform: rotateZ('10deg');
+  transform: rotateZ("10deg");
   animation: bar-animation 1s ease infinite;
 }
 
@@ -64,8 +63,6 @@ nav {
   width: 1000px;
   height: 2rem;
   padding: 2rem;
-
-
 }
 
 ul {
@@ -101,7 +98,7 @@ main {
   flex: 1;
   display: flex;
   flex-flow: column;
-  width: 850px;
+  width: 1000px;
 }
 
 footer {
@@ -158,7 +155,7 @@ footer svg:hover {
 
 .name-title {
   font-size: 6rem;
-  margin-right: .5em;;
+  margin-right: 0.5em;
 }
 
 .typewriter {
@@ -173,7 +170,6 @@ footer svg:hover {
   color: currentColor;
 }
 
-
 .about-me {
   display: flex;
   align-items: center;
@@ -182,7 +178,7 @@ footer svg:hover {
   transition: transform 0.4s ease;
 }
 
-.about-me:hover{
+.about-me:hover {
   transform: scale(1.3);
 }
 
@@ -194,33 +190,106 @@ footer svg:hover {
   flex: 1;
 }
 
-.info-aboutme{
-  flex: 1;
+.info-aboutme h2 {
+  font-size: 3rem;
+  border-bottom: 1px solid white;
 }
 
 .aboutme-title {
   font-size: 6rem;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
+
+
 
 .about-me svg {
   animation: bounce 1s both infinite;
 }
 
-
-.iconos svg{
+.iconos svg {
   width: 150px;
   height: 150px;
 }
+
+.info-estudios {
+  float: left;
+}
+
+.estudios {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.estudios img {
+  width: 350px;
+  height: 350px;
+}
+
+.diploma-tecnologia {
+  display: inline-block;
+  transition: transform 0.4s ease;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.diploma-tecnologia:hover {
+  transform: scale(1.3);
+}
+
+.title-practicante {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.title-trainee {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.experiencia-laboral {
+  display: flex;
+  align-items: center;
+}
+
+.experiencia-laboral img {
+  align-items: center;
+}
+
+.certificado-personalsof {
+  display: inline-block;
+  transition: transform 0.4s ease;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+}
+.certificado-personalsof:hover {
+  transform: scale(1.3);
+}
+
+h2 svg {
+  height: 2.5rem;
+}
+
 
 @keyframes bounce {
   0% {
     transform: translateX(0%);
   }
 
- 50% {
-  transform: translateX(40%);
- }
+  50% {
+    transform: translateX(40%);
+  }
 
   100% {
     transform: translateX(0%);
