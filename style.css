@@ -101,6 +101,14 @@ main {
   width: 1000px;
 }
 
+embed {
+  height: 100vh;
+  /*filter: drop-shadow(
+    0 0 10px rgba(255, 255, 255, 0.23)
+
+  ); */
+}
+
 footer {
   display: flex;
   gap: 2rem;
@@ -289,6 +297,11 @@ footer svg:hover {
 
 h2 svg {
   height: 2.5rem;
+}
+
+header{
+  font-size: 2rem;
+  text-align: center;
 }
 
 
