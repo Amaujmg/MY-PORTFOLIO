@@ -229,7 +229,7 @@ body {
   color: white;
   line-height: 1.4;
   overflow-x: hidden;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Source Sans 3", sans-serif;
   padding: 5rem;
   height: 100vh;
   gap: 6rem;
@@ -393,6 +393,7 @@ footer svg:hover {
   gap: 0.5rem;
   width: fit-content;
   transition: transform 0.4s ease;
+  font-size: 1.2rem;
 }
 
 .about-me:hover {
@@ -401,6 +402,8 @@ footer svg:hover {
 
 .name-title__desc {
   margin-bottom: 3rem;
+  font-size: 1.2rem;
+  line-height: 2;
 }
 
 .info {
