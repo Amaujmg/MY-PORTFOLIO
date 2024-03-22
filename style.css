@@ -235,9 +235,6 @@ body {
   gap: 6rem;
 }
 
-.name-title {
-  font-size: 8rem;
-}
 .aboutme-title {
   font-size: 8rem;
 }
@@ -259,7 +256,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1000px;
+  width: clamp(0px, 100vw, 1000px);
   height: 2rem;
   padding: 2rem;
 }
@@ -297,7 +294,8 @@ main {
   flex: 1;
   display: flex;
   flex-flow: column;
-  width: 1000px;
+  width: clamp(0px, 80vw, 1000px);
+
 }
 
 .projects-main{
@@ -310,8 +308,17 @@ embed {
 
 footer {
   display: flex;
+  justify-content: center;
   gap: 2rem;
   padding-bottom: 30px;
+  width: clamp(0px, 80vw, 1000px);
+}
+
+@media (max-width: 400px) {
+  footer {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 footer a {
@@ -361,14 +368,14 @@ footer svg:hover {
 }  */
 
 .name-title {
-  font-size: 6rem;
+  font-size: clamp(12px, 12vw, 6rem);
   margin-right: 0.5em;
 }
 
 .typewriter {
   display: flex;
   align-items: center;
-  font-size: 6rem;
+  font-size: clamp(12px, 12vw, 6rem);
   font-weight: bold;
 }
 
@@ -398,6 +405,8 @@ footer svg:hover {
 
 .info {
   flex: 1;
+
+
 }
 
 .info-aboutme h2 {
