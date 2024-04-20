@@ -261,6 +261,8 @@ nav {
   padding: 2rem;
 }
 
+
+
 ul {
   list-style: none;
   display: flex;
@@ -289,6 +291,7 @@ nav a svg {
 nav a svg:hover {
   transform: scale(2);
 }
+
 
 main {
   flex: 1;
