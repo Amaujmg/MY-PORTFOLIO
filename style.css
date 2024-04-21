@@ -31,20 +31,6 @@
   z-index: -1;
 
 }
-.area-cv{
-  background-color: rgb(5, 75, 51);  
-  background: -webkit-linear-gradient(to bottom, rgba(48, 50, 51, 0.86), #0b0d0f);  
-  width: 100%;
-  height:100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  display: block;
-/*   background-image: linear-gradient(to bottom, rgba(48, 50, 51, 0.86), #0b0d0f); */
-  z-index: -1;
-
-}
 
 .area-aboutme{
   background-color: #074780;  
@@ -236,7 +222,8 @@ body {
 }
 
 .aboutme-title {
-  font-size: 8rem;
+ font-size: clamp(6px, 6vw, 40px); 
+  text-align: center;
 }
 
 .content-text-animation {
@@ -314,15 +301,9 @@ footer {
   justify-content: center;
   gap: 2rem;
   padding-bottom: 30px;
-  width: clamp(0px, 80vw, 1000px);
+  width: clamp(0px, 70vw, 1000px);
 }
 
-@media (max-width: 400px) {
-  footer {
-    align-items: center;
-    flex-direction: column;
-  }
-}
 
 footer a {
   cursor: none;
@@ -380,6 +361,7 @@ footer svg:hover {
   align-items: center;
   font-size: clamp(12px, 12vw, 6rem);
   font-weight: bold;
+  height: 1.5em;
 }
 
 .info a {
@@ -420,10 +402,6 @@ footer svg:hover {
   border-bottom: 1px solid white;
 }
 
-.aboutme-title {
-  font-size: 6rem;
-  margin-right: 0.5em;
-}
 
 .about-me svg {
   animation: bounce 1s both infinite;
@@ -440,18 +418,28 @@ footer svg:hover {
 
 .estudios {
   display: flex;
+
   align-items: center;
   margin-bottom: 4rem;
   transition: transform 0.4s ease;
 }
+@media (max-width: 550px) {
+  .estudios  {
+    flex-direction: column-reverse;
+  }
+}
+
 .estudios:hover{
   transform: scale(1.1);
 }
 
 .estudios img {
-  width: 350px;
-  height: 350px;
+  width: clamp(7px, 70vw, 350px); 
+  aspect-ratio: 1;
+
 }
+
+
 
 
 .title-practicante {
@@ -476,12 +464,18 @@ footer svg:hover {
   align-items: center;
   transition: transform 0.4s ease;
 }
+@media (max-width: 900px) {
+  .experiencia-laboral  {
+    flex-direction: column;
+  }
+}
 
 .experiencia-laboral:hover {
   transform: scale(1.1);
 }
 
 .experiencia-laboral img {
+  width: clamp(7px, 70vw, 400px); 
   align-items: center;
 }
 
@@ -499,7 +493,7 @@ footer svg:hover {
 }
 
 .courses img {
-  width: 600px;
+  width: clamp(7px, 85vw, 600px); 
   margin: 30px;
   transition: transform 0.4s ease;
 }
@@ -513,10 +507,7 @@ h2 svg {
   height: 2.5rem;
 }
 
-header{
-  font-size: 2rem;
-  text-align: center;
-}
+
 .download-button {
   position: relative;
   border-width: 0;
