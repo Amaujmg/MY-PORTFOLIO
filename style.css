@@ -365,6 +365,7 @@ footer svg:hover {
   margin-bottom: 3rem;
   font-size: 1.2rem;
   line-height: 2;
+  
 }
 
 .info {
@@ -398,6 +399,10 @@ footer svg:hover {
   margin-bottom: 4rem;
   transition: transform 0.4s ease;
 }
+.estudios-title{
+  border-bottom: 1px solid;
+}
+
 @media (max-width: 550px) {
   .estudios  {
     flex-direction: column-reverse;
@@ -414,7 +419,9 @@ footer svg:hover {
 
 }
 
-
+.job-title{
+  border-bottom: 1px solid;
+}
 
 
 .title-practicante {
