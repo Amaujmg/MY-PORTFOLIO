@@ -222,6 +222,7 @@ nav {
   width: clamp(0px, 100vw, 1000px);
   height: 2rem;
   padding: 2rem;
+
 }
 
 
@@ -317,15 +318,6 @@ footer svg:hover {
   transform: translate(-50%, -50%);
 }
 
-/* .content:hover ~ .cursor{
-  transform: translate(-50%, -50%) scale(1.5);
-  background-color: #c6c6c6;
-  opacity: .5;
-} 
-
-.content:hover ~ .cursor2{
-  opacity: 0;
-}  */
 
 .name-title {
   font-size: clamp(12px, 12vw, 6rem);
@@ -580,7 +572,6 @@ footer svg:hover {
 }
 
 
-
 h2 svg {
   height: 2.5rem;
 }
@@ -652,7 +643,10 @@ h2 svg {
 
  /* PROJECTS PAGES */
 
-
+ .projects-title {
+  font-size: clamp(6px, 6vw, 20px); 
+   text-align: center;
+ }
  .cards a{
   text-decoration: none;
  }
@@ -672,33 +666,32 @@ h2 svg {
   align-items: center;
   transform-style: preserve-3d;
   flex-direction: column;
-  margin-bottom: 100px;
  }
 
  .cards{
   position: relative;
   height: 500px;
   width: 430px;
-  margin-bottom: 20px;
   perspective: 1000px;
   transform-style: preserve-3d;
-  
+  margin-bottom: 4rem;
+ 
  }
 
  .cards label{
-
+  width: clamp(100px,70vw,430px);
+  height: clamp(200px,70vw,500px);
   position: absolute;
-  width: 430px;
   left: 0;
   right: 0;
   margin: auto;
   cursor: pointer;
   transition: transform 0.55s ease;
+  
  }
 
  .cards .card{
   position: relative;
-  height: 100%;
   background-color: #2f2f2ffe;
   border-radius: 10px;
   padding: 30px 35px;
@@ -711,6 +704,7 @@ h2 svg {
 .cards .image{
   display: flex;
   justify-content: center;
+  cursor: none;
 }
 
 .cards .image img{
@@ -732,6 +726,7 @@ h2 svg {
   display: block;
   text-align: start;
   padding-top: 30px;
+  
 }
 
 .card .infos span{
@@ -741,7 +736,6 @@ h2 svg {
 .infos .name{
   font-size: 30px;
   color: white ;
-  letter-spacing: 8px;
   margin-bottom: 20px;
   padding-left: 0;
   transition: all .6s ease;
@@ -760,7 +754,8 @@ h2 svg {
 .card .btn-details{
   width: 100%;
   height: 60px;
-  margin: 35px auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
   background-color: var(--current-color1);
   display: flex;
@@ -776,22 +771,6 @@ h2 svg {
   transform: scale(1.09);
 }
 
-.card .actions{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-}
-
-.actions i{
-  font-size: 24px;
-  transition: all .7s ease;
-  color: var(--current-color2);
-}
-
-.actions:hover i{
-  transform: scale(1.3);
-}
 
 /* 1 */
  #s1:checked~.cards #slider4,
