@@ -38,6 +38,7 @@ function animation(){
   let nivelArray = 0;
 
   const contentAnimation = document.querySelector(".content-text-animation");
+  if (contentAnimation === null) return
 
   function PaintText(){
     letraContador++;
