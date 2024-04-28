@@ -1,31 +1,4 @@
-//CURSOR ANIMATION
-function handleCursor(e) {
-  const $cursor_outline = document.querySelector(".cursor-outline");
-  const $cursor_dot = document.querySelector(".cursor-dot");
-  const x = e.clientX;
-  const y = e.clientY;
-  $cursor_outline.style.left = `${x}px`;
-  $cursor_outline.style.top = `${y}px`;
-  $cursor_dot.style.left = `${x}px`;
-  $cursor_dot.style.top = `${y}px`;
-  $cursor_outline.animate(
-    {
-      top: `${y}px`,
-      left: `${x}px`,
-    },
-    { duration: 500, fill: "forwards" }
-  );
 
-  $cursor_dot.animate(
-    {
-      top: `${y}px`,
-      left: `${x}px`,
-    },
-    { duration: 100, fill: "forwards" }
-  );
-}
-
-document.addEventListener("mousemove", handleCursor);
 
 //ANIMATION NAME
 function animation(){
@@ -79,3 +52,4 @@ function animation(){
   let intervalo = setInterval(PaintText, 300);
 }
 window.addEventListener("load",animation)
+
