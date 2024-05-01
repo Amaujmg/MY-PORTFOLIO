@@ -198,6 +198,7 @@ body {
 
 .aboutme-title {
   font-style: italic;
+  font-family: AcornBold;
   font-size: clamp(6px, 6vw, 40px); 
   text-align: center;
   animation: home-page 2s forwards
@@ -210,7 +211,8 @@ body {
   display: flex;
   width: 3px;
   height: 70px;
-  margin-left: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
   background-color: white;
   transform: rotateZ("10deg");
   animation: bar-animation 1s ease infinite;
@@ -306,17 +308,29 @@ footer svg:hover {
 
 
 .name-title {
-  font-size: clamp(12px, 12vw, 6rem);
-  margin-right: 0.5em;
+  font-size: clamp(12px, 10vw, 6rem);
+  margin-right: .3em;
 }
 
+@font-face {
+  font-family: "AcornBold";
+  src: url(acorn/Acorn-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "AcornLight";
+  src: url(acorn/Acorn-ExtraLight.otf) format('opentype');
+}
 .typewriter {
   display: flex;
   align-items: center;
-  font-size: clamp(12px, 12vw, 6rem);
+  font-size: clamp(12px, 10vw, 6rem);
   font-weight: bold;
   height: 1.5em;
+  font-family: AcornBold;
+  font-style: italic;
 }
+
 
 .info a {
   text-decoration: none;
@@ -333,8 +347,7 @@ footer svg:hover {
   font-size: 1.2rem;
   border: 1px solid white;
   border-radius: 30px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-inline: 1.2rem;
   
 }
 
@@ -420,13 +433,17 @@ footer svg:hover {
 
 .estudios {
   display: flex;
-
   align-items: center;
   margin-bottom: 4rem;
   transition: transform 0.4s ease;
 }
+
+.estudios svg{
+  padding-top: .5rem;
+}
 .estudios-title{
   border-bottom: 1px solid;
+  font-family: AcornBold;
 }
 
 @media (max-width: 550px) {
@@ -447,6 +464,7 @@ footer svg:hover {
 
 .job-title{
   border-bottom: 1px solid;
+  font-family: AcornBold;
 }
 
 
@@ -472,6 +490,10 @@ footer svg:hover {
   align-items: center;
   transition: transform 0.4s ease;
   margin-bottom: 4rem;
+}
+
+.experiencia-laboral svg{
+  padding-top: .5rem;
 }
 @media (max-width: 900px) {
   .experiencia-laboral  {
@@ -531,6 +553,7 @@ footer svg:hover {
   margin-top: 1rem;
   margin-bottom: 3rem;
   border-bottom: 1px solid;
+  font-family: AcornBold;
 }
 
 .data-analist{
@@ -594,6 +617,7 @@ footer svg:hover {
   margin-bottom: 100px;
   width: 100%;
   border-bottom: 1px solid;
+  font-family: AcornBold;
 }
 
 .courses img {
@@ -614,6 +638,7 @@ h2 svg {
  /* PROJECTS PAGES */
 
  .projects-title {
+  font-family: AcornBold;
   font-style: italic;
   font-size: clamp(6px, 6vw, 40px); 
   text-align: center;
