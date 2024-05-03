@@ -427,86 +427,185 @@ footer svg:hover {
   height: 150px;
 }
 
-.info-estudios {
-  float: left;
-}
+/* ESTUDIOS */
 
-.estudios {
-  display: flex;
-  align-items: center;
-  margin-bottom: 4rem;
-  transition: transform 0.4s ease;
-}
+.estudios-title{
+  width: 100%;
+  border-bottom: 1px solid;
+  font-family: AcornBold;
+  text-align: left;
+  padding-left: 5rem;
 
+}
 .estudios svg{
   padding-top: .5rem;
 }
-.estudios-title{
-  border-bottom: 1px solid;
-  font-family: AcornBold;
-}
 
-@media (max-width: 550px) {
-  .estudios  {
-    flex-direction: column-reverse;
-  }
-}
 
-.estudios:hover{
-  transform: scale(1.1);
+.estudios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 
 .estudios img {
-  width: clamp(7px, 70vw, 350px); 
+  width: clamp(7px, 70vw, 140px); 
   aspect-ratio: 1;
+}
+.estudios h3{
+  font-size: 15px;
+  font-weight: 300;
+}
+
+
+.title-estudios{
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
 
 }
 
+.info-estudios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  flex-basis: 40%;
+  margin-bottom: 3%;
+}
+
+.text-estudios{
+  display: flex;
+  align-items: center;
+  flex-basis: 60%;
+
+}
+
+@media (max-width: 550px) {
+  .tecnologo  {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .estudios-title{
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+.tecnologo{
+  display: flex;
+  width: 100%;
+  padding-block: 1rem;
+  transition: transform 0.4s ease;
+}
+.tecnologo:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* EXPERIENCIA LABORAL */
+
+.experiencia-laboral h3{
+  font-size: 15px;
+  font-weight: 300;
+}
 .job-title{
   border-bottom: 1px solid;
   font-family: AcornBold;
+  text-align: right;
+  padding-right: 5rem;
 }
 
+.title-job{
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
 
-.title-practicante {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-style: italic;
 }
-.title-trainee {
+
+.info-job{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  flex-basis: 40%;
+  margin-bottom: 3%;
+}
+
+.text-job{
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-style: italic;
+  flex-basis: 60%;
+  padding-left: 2%;
+
+}
+.duracion{
+  margin-top: .3rem;
+  font-size: 13px;
+  text-align: center;
+  background-color:rgb(250 204 21);
+  color: #000;
+
+  ;
+  border-radius: 40px;
+  width: 200px;
+  padding-inline: 1rem;
+}
+
+/* PRACTICANTE */
+
+.practicante{
+  display: flex;
+  transition: transform 0.4s ease;
+  padding-block: 1rem;
+}
+
+.practicante:hover {
+  transform: scale(1.05);
+}
+
+/* TRAINEE */
+
+.trainee{
+  display: flex;
+  transition: transform 0.4s ease;
+  padding-block: 1rem;
+}
+
+.trainee:hover {
+  transform: scale(1.05);
 }
 
 .experiencia-laboral {
   display: flex;
   align-items: center;
-  transition: transform 0.4s ease;
   margin-bottom: 4rem;
 }
+
 
 .experiencia-laboral svg{
   padding-top: .5rem;
 }
-@media (max-width: 900px) {
-  .experiencia-laboral  {
+@media (max-width: 700px) {
+  .practicante , .trainee{
     flex-direction: column;
   }
 }
 
-.experiencia-laboral:hover {
-  transform: scale(1.1);
+@media (max-width: 700px) {
+  .job-title{
+    text-align: center;
+    padding-right: 0;
+  }
 }
 
+
+
 .experiencia-laboral img {
-  width: clamp(7px, 70vw, 400px); 
+  width: clamp(7px, 70vw, 200px); 
   align-items: center;
 }
 
