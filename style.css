@@ -195,13 +195,7 @@ body {
   gap: 6rem;
 }
 
-.aboutme-title {
-  font-style: italic;
-  font-family: AcornBold;
-  font-size: clamp(6px, 6vw, 40px); 
-  text-align: center;
-  animation: home-page 2s forwards
-}
+
 
 .content-text-animation {
   display: flex;
@@ -236,6 +230,9 @@ nav img{
   align-items: center;
   gap: 6px;
 }
+.change-language img{
+padding-bottom: 1px;  
+}
 
 
 
@@ -268,6 +265,7 @@ nav a svg:hover {
   transform: scale(2);
 }
 
+/* MAIN */
 
 main {
   flex: 1;
@@ -276,6 +274,12 @@ main {
   width: clamp(0px, 80vw, 1000px);
   animation: load 4s forwards
 
+}
+
+.name-title__desc{
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  line-height: 2;
 }
 
 .projects-main{
@@ -330,6 +334,10 @@ footer svg:hover {
   font-style: italic;
 }
 
+.info{
+  flex: 1;
+  animation: home-page 2s forwards;
+}
 
 .info a {
   text-decoration: none;
@@ -400,112 +408,15 @@ footer svg:hover {
 /* ABOUT ME PAGE */
 
 
-
-.name-title__desc {
-  margin-bottom: 3rem;
-  font-size: 1.2rem;
-  line-height: 2;
-  
-}
-
-.info {
-  flex: 1;
-  animation: home-page 2s forwards
-
-}
-
-.info-aboutme h2 {
-  font-size: 3rem;
-}
-
-
-
-
-.iconos svg {
-  width: 150px;
-  height: 150px;
-}
-
-/* ESTUDIOS */
-
-.estudios-title{
-  width: 100%;
-  border-bottom: 1px solid;
-  font-family: AcornBold;
-  text-align: left;
-  padding-left: 5rem;
-
-}
-.estudios svg{
-  padding-top: .5rem;
-}
-
-
-.estudios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 4rem;
-}
-
-.estudios img {
-  width: clamp(7px, 70vw, 140px); 
-  aspect-ratio: 1;
-}
-.estudios h3{
-  font-size: 15px;
-  font-weight: 300;
-}
-
-
-.title-estudios{
-  font-size: 22px;
-  font-weight: 700;
-  text-align: center;
-
-}
-
-.info-estudios{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: right;
-  flex-basis: 40%;
-  margin-bottom: 3%;
-}
-
-.text-estudios{
-  display: flex;
-  align-items: center;
-  flex-basis: 60%;
-
-}
-
-@media (max-width: 550px) {
-  .tecnologo  {
-    flex-direction: column;
-  }
-}
-@media (max-width: 700px) {
-  .estudios-title{
-    text-align: center;
-    padding-left: 0;
-  }
-}
-
-.tecnologo{
-  display: flex;
-  width: 100%;
-  padding-block: 1rem;
-  transition: transform 0.4s ease;
-}
-.tecnologo:hover {
-  transform: scale(1.05);
-}
-
-
-
 /* EXPERIENCIA LABORAL */
+
+.experience-title {
+  font-style: italic;
+  font-family: AcornBold;
+  font-size: clamp(6px, 6vw, 40px); 
+  text-align: center;
+  animation: home-page 2s forwards
+}
 
 .experiencia-laboral h3{
   font-size: 15px;
@@ -601,12 +512,96 @@ footer svg:hover {
   }
 }
 
-
-
 .experiencia-laboral img {
   width: clamp(7px, 70vw, 200px); 
   align-items: center;
 }
+
+.info-aboutme h2 {
+  font-size: 3rem;
+}
+
+
+.iconos svg {
+  width: 150px;
+  height: 150px;
+}
+
+/* ESTUDIOS */
+
+.estudios-title{
+  width: 100%;
+  font-family: AcornBold;
+  text-align: center;
+
+}
+.estudios svg{
+  padding-top: .5rem;
+}
+
+
+.estudios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.estudios img {
+  width: clamp(7px, 70vw, 140px); 
+  aspect-ratio: 1;
+}
+.estudios h3{
+  font-size: 15px;
+  font-weight: 300;
+}
+
+
+.title-estudios{
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.info-estudios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  flex-basis: 40%;
+  margin-bottom: 3%;
+}
+
+.text-estudios{
+  display: flex;
+  align-items: center;
+  flex-basis: 60%;
+
+}
+
+@media (max-width: 550px) {
+  .tecnologo  {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .estudios-title{
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+.tecnologo{
+  display: flex;
+  width: 100%;
+  padding-block: 1rem;
+  transition: transform 0.4s ease;
+}
+.tecnologo:hover {
+  transform: scale(1.05);
+}
+
 
 /* Skills */
 
@@ -615,7 +610,6 @@ footer svg:hover {
   justify-content: center;
   margin-bottom: 2rem;
   width: 100%;
-  border-bottom: 1px solid;
   font-family: AcornBold;
 }
 
@@ -624,7 +618,7 @@ footer svg:hover {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .skills-container{
@@ -713,7 +707,6 @@ footer svg:hover {
   justify-content: center;
   margin-bottom: 2rem;
   width: 100%;
-  border-bottom: 1px solid;
   font-family: AcornBold;
 }
 
@@ -723,6 +716,7 @@ footer svg:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr ;
   gap: 1rem;
+  margin-bottom: 4rem;
 
 }
 .courses-container > div{
@@ -765,7 +759,7 @@ footer svg:hover {
 }
 
 .course-hover button{
-  background-color:#0051ff;
+  background-color:#00bbff;
   border-radius: 20px;
   border: 1px solid white;
   padding: 2% 5%;
