@@ -183,7 +183,6 @@ svg {
 }
 
 body {
-  
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -721,26 +720,68 @@ footer svg:hover {
 .courses-container{
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr ;
+  gap: 1rem;
 
 }
-.courses-container div{
+.courses-container > div{
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
+  border: 1px solid #e5e7eb3c;
+  background-color: #0000003c ;
+  border-radius: 20px;
 
 }
 
 .courses img {
-  width: 90%;
+  width: 80%;
+  height: 80%;
   transition: transform 0.4s ease;
-  border-radius: 20px;
 
 }
-.courses img:hover {
-  transform: scale(1.1);
+.courses-container  > div:hover > .course-hover{
+  opacity: 1;
+  visibility: visible;
 }
+.courses-container  > div:hover img{
+  transform: scale(1.05);
+}
+
+.course-hover{
+  color: #fff;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #272935a3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  align-content: center;
+  transition: all .3s;
+}
+
+.course-hover button{
+  background-color:#0051ff;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 2% 5%;
+  color: white;
+  margin-block: 30px;
+  transition: all .7s;
+  cursor: pointer;
+}
+
+.course-hover button:hover{
+  transform: scale(1.03);
+  transition: all .7s;
+  filter: drop-shadow(0 0 5px rgba(247, 247, 247, 0.8));
+}
+
+
 
 
 h2 svg {
