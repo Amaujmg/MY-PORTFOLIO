@@ -45,3 +45,16 @@ function animation(){
 }
 window.addEventListener("load",animation)
 
+/* NAV SCROLL ANIMATION */
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector("nav")
+
+  if(window.scrollY > 100 ){
+    navbar.classList.add("nav-blur")
+  }
+  else{
+    navbar.classList.remove("nav-blur")
+  }
+  
+} )
+

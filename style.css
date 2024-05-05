@@ -211,6 +211,8 @@ body {
   animation: bar-animation 1s ease infinite;
 }
 
+
+
 nav {
   display: flex;
   align-items: center;
@@ -218,7 +220,19 @@ nav {
   width: clamp(0px, 100vw, 1000px);
   height: 2rem;
   padding: 2rem;
-  animation: load 3.3s forwards
+  animation: load 3.3s forwards;
+  transition:  1s;
+  position: fixed;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.nav-blur{
+  backdrop-filter: blur(30px);
+  background-color: #ebebeb10;
+  margin-top: -80px;
+
+  transition:  1s;
 }
 
 nav img{
@@ -229,6 +243,8 @@ nav img{
   display: flex;
   align-items: center;
   gap: 6px;
+  
+  
 }
 .change-language img{
 padding-bottom: 1px;  
@@ -241,6 +257,7 @@ ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  
 }
 
 li a {
@@ -268,6 +285,7 @@ nav a svg:hover {
 /* MAIN */
 
 main {
+  margin-top: 10rem;
   flex: 1;
   display: flex;
   flex-flow: column;
@@ -411,7 +429,6 @@ footer svg:hover {
 /* EXPERIENCIA LABORAL */
 
 .experience-title {
-  font-style: italic;
   font-family: AcornBold;
   font-size: clamp(6px, 6vw, 40px); 
   text-align: center;
@@ -624,7 +641,7 @@ footer svg:hover {
 .skills-container{
   width: 750px;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr  ;
   grid-template-rows: 1fr 1fr ;
   gap: 2rem;
 }
@@ -634,7 +651,7 @@ footer svg:hover {
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr ;
   background-color: #03111e;
   border-radius: 10px;
   color: #ffffff;
@@ -713,7 +730,7 @@ footer svg:hover {
 .courses-container{
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   grid-template-rows: 1fr ;
   gap: 1rem;
   margin-bottom: 4rem;
