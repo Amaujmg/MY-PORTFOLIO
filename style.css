@@ -228,7 +228,7 @@ nav {
 }
 
 .nav-blur{
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(50px);
   background-color: #ebebeb10;
   margin-top: -80px;
 
@@ -326,13 +326,6 @@ footer svg:hover {
   transform: scale(2);
 }
 
-
-
-.name-title {
-  font-size: clamp(12px, 10vw, 6rem);
-  margin-right: .3em;
-}
-
 @font-face {
   font-family: "AcornBold";
   src: url(acorn/Acorn-Bold.otf) format('opentype');
@@ -342,6 +335,12 @@ footer svg:hover {
   font-family: "AcornLight";
   src: url(acorn/Acorn-ExtraLight.otf) format('opentype');
 }
+
+.name-title {
+  font-size: clamp(12px, 10vw, 6rem);
+  margin-right: .3em;
+}
+
 .typewriter {
   display: flex;
   align-items: center;
