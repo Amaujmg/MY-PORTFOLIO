@@ -197,19 +197,7 @@ body {
 
 
 
-.content-text-animation {
-  display: flex;
-}
-.writing-bar {
-  display: flex;
-  width: 3px;
-  height: 70px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  background-color: white;
-  transform: rotateZ("10deg");
-  animation: bar-animation 1s ease infinite;
-}
+
 
 
 
@@ -221,7 +209,7 @@ nav {
   height: 2rem;
   padding: 2rem;
   animation: load 3.3s forwards;
-  transition:  1s;
+  transition:  .5s;
   position: fixed;
   z-index: 2;
   border-radius: 10px;
@@ -251,8 +239,6 @@ padding-bottom: 1px;
 }
 
 
-
-
 ul {
   list-style: none;
   display: flex;
@@ -271,15 +257,19 @@ li a {
 
 li a:hover {
   background: no-repeat bottom left/100% 1px linear-gradient(white, white);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-nav a svg {
+nav a .logo-Home{
   transition: transform 0.4s ease;
 }
 
-nav a svg:hover {
-  transform: scale(2);
+nav a .logo-Home:hover {
+  transform: scale(1.6);
+}
+
+.logo-Home{
+  height: 20px;
 }
 
 /* MAIN */
@@ -296,6 +286,7 @@ main {
 
 .name-title__desc{
   margin-bottom: 3rem;
+  font-weight: 100;
   font-size: 1.2rem;
   line-height: 2;
 }
@@ -337,18 +328,31 @@ footer svg:hover {
 }
 
 .name-title {
-  font-size: clamp(12px, 10vw, 6rem);
+  font-size: clamp(12px, 9vw, 6rem);
   margin-right: .3em;
 }
 
 .typewriter {
   display: flex;
   align-items: center;
-  font-size: clamp(12px, 10vw, 6rem);
+  font-size: clamp(12px, 9vw, 6rem);
   font-weight: bold;
   height: 1.5em;
   font-family: AcornBold;
   font-style: italic;
+}
+.content-text-animation {
+  display: flex;
+}
+.writing-bar {
+  display: flex;
+  width: 3px;
+  height: clamp(12px, 9vw, 6rem);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  transform: rotateZ("10deg");
+  animation: bar-animation 1s ease infinite;
 }
 
 .info{
@@ -361,27 +365,95 @@ footer svg:hover {
   color: currentColor;
 }
 
-
-.about-me-btn {
+.animated-button {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  width: fit-content;
-  transition: transform 0.4s ease;
-  font-size: 1.2rem;
-  border: 1px solid white;
+  gap: 4px;
+  padding: 10px 36px;
+  border: 1px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 0 2px rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: rgb(255, 255, 255);
+  z-index: 9;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
   border-radius: 30px;
-  padding-inline: 1.2rem;
-  
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.about-me-btn:hover {
-  transform: scale(1.12);
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.about-me-btn svg {
-  animation: bounce 1.3s both infinite;
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 30px;
 }
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px rgb(164, 163, 164);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+
 
 .available-work{
   display: flex;
@@ -390,9 +462,8 @@ footer svg:hover {
   gap: 8px;
   width: fit-content;
   font-size: 1.1rem;
-  border: 1px solid white;
   border-radius: 30px;
-  padding-inline: 1rem;
+  padding: 10px 20px;
   position: relative;
 }
 .available-work::after{
@@ -403,7 +474,7 @@ footer svg:hover {
   height: 12px;
   width: 12px;
   border-radius: 99999px;
-  left: 14px;
+  left: 18px;
 
 }
 .available-work::before{
@@ -419,12 +490,14 @@ footer svg:hover {
 
 .about-work{
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
-@media (max-width: 485px) {
+@media (max-width: 580px) {
   .about-work{
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -646,9 +719,10 @@ footer svg:hover {
 .skills-container{
   width: 750px;
   display: grid;
-  grid-template-columns: 1fr 1fr  ;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr ;
-  gap: 2rem;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .skills-container > div{
@@ -658,23 +732,22 @@ footer svg:hover {
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 1fr 1fr ;
-  background-color: #03111e;
+  background-color: #03111e88;
   border-radius: 20px;
   color: #ffffff;
-  border: 1px solid #0c9db778;
   transition: all .5s;
   cursor: pointer;
 }
+
 .skills-container > div:hover{
   box-shadow: 0px 0px 20px 1px #0c9db778;
-  border: 1px solid rgba(208, 210, 211, 0.454);
+  transform: scale(1.03);
 }
-
 
 
 .skills-container h3{
   grid-column: span 3;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 .skills-container p{
@@ -683,8 +756,8 @@ footer svg:hover {
 
 
 .skill-icons {
-  gap: 8px;
-  width: 100px;
+  gap: 10px;
+  width: 120px;
   display: flex;
   aspect-ratio: 1;
   text-align: center;
@@ -693,7 +766,7 @@ footer svg:hover {
   align-content: center;
   flex-direction: column;
   justify-content: center;
-  padding: .5em;
+  padding: .5rem;
 }
 
 .skill-icons svg{
@@ -702,16 +775,29 @@ footer svg:hover {
   height: var(--size);
 }
 
-.data-analist h3{
-  background: -webkit-linear-gradient(#ffae00 50%, hsl(0, 0%, 100%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.frontend{
+  grid-column: span 2;
 }
 .frontend h3{
   background: -webkit-linear-gradient(#00bbff 50%, hsl(0, 0%, 100%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+.data-analist{
+  grid-column: span 1;
+}
+
+.data-analist h3{
+  background: -webkit-linear-gradient(#ffae00 50%, hsl(0, 0%, 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
 .backend h3{
   background: -webkit-linear-gradient(#00ff9d 50%, hsl(0, 0%, 100%));
   -webkit-background-clip: text;
@@ -722,6 +808,7 @@ footer svg:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 .herramientas h3{
   background: -webkit-linear-gradient(#9642d7 50%, hsla(0, 0%, 100%, 0.459));
