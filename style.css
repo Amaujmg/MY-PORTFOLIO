@@ -193,12 +193,8 @@ body {
   padding: 5rem;
   height: 100vh;
   gap: 6rem;
+
 }
-
-
-
-
-
 
 
 nav {
@@ -458,7 +454,7 @@ footer svg:hover {
 .available-work{
   display: flex;
   align-items: center;
-  background-color: #272935;
+  background-color: #272e35;
   gap: 8px;
   width: fit-content;
   font-size: 1.1rem;
@@ -510,13 +506,13 @@ footer svg:hover {
   font-family: AcornBold;
   font-size: clamp(6px, 6vw, 40px); 
   text-align: center;
-  animation: home-page 2s forwards
+  animation: home-page 4s forwards
 }
 
-.experiencia-laboral h3{
-  font-size: 15px;
-  font-weight: 300;
+.experiencia-laboral {
+  animation: home-page 4s forwards
 }
+
 .job-title{
   border-bottom: 1px solid;
   font-family: AcornBold;
@@ -717,7 +713,6 @@ footer svg:hover {
 }
 
 .skills-container{
-  width: 750px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr ;
@@ -744,10 +739,17 @@ footer svg:hover {
   transform: scale(1.03);
 }
 
+@media (max-width: 880px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+} 
+
 
 .skills-container h3{
   grid-column: span 3;
-  font-size: 25px;
+  font-size: clamp(16px, 5vw, 25px); 
   text-align: center;
 }
 .skills-container p{
@@ -757,7 +759,7 @@ footer svg:hover {
 
 .skill-icons {
   gap: 10px;
-  width: 120px;
+  width: clamp(2px, 12vw, 100px); 
   display: flex;
   aspect-ratio: 1;
   text-align: center;
@@ -770,9 +772,8 @@ footer svg:hover {
 }
 
 .skill-icons svg{
-  --size: 60px;
-  width: var(--size);
-  height: var(--size);
+  width: 100%;
+  height: 100%;
 }
 
 
