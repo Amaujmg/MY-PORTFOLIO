@@ -538,6 +538,8 @@ footer svg:hover {
 
 .text-job{
   display: flex;
+  gap: 1rem;
+  flex-direction: column;
   align-items: center;
   flex-basis: 60%;
   padding-left: 2%;
