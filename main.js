@@ -1,3 +1,4 @@
+/* TITLE TEXT ANIMATION */
 function animation(){
   let textAnimation = [
     ["J","u","a","n"," ","M","a",],
@@ -7,7 +8,7 @@ function animation(){
   let letraContador = -1;
   let nivelArray = 0;
 
-  const contentAnimation = document.querySelector(".content-text-animation");
+  const contentAnimation = document.querySelector(".title-text-animation");
   if (contentAnimation === null) return
 
   function paintText(){

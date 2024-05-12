@@ -10,14 +10,19 @@
   
 }
 
-.context h1{
-  text-align: center;
-  color: #fff;
-  font-size: 100px;
+
+@font-face {
+  font-family: "AcornBold";
+  src: url(acorn/Acorn-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "AcornLight";
+  src: url(acorn/Acorn-ExtraLight.otf) format('opentype');
 }
 
 
-.area-index{
+.background-index{
   background-color: #0e021af5;   
   background: -webkit-linear-gradient(to bottom, rgba(48, 50, 51, 0.86), #0b0d0f);  
   width: 100%;
@@ -158,8 +163,6 @@
   animation-duration: 11s;
 }
 
-
-
 @keyframes animate {
 
   0%{
@@ -196,7 +199,7 @@ body {
 
 }
 
-
+/* NAV SECTION */
 nav {
   display: flex;
   align-items: center;
@@ -268,7 +271,8 @@ nav a .logo-Home:hover {
   height: 20px;
 }
 
-/* MAIN */
+
+/* MAIN SECTION */
 
 main {
   margin-top: 10rem;
@@ -280,7 +284,38 @@ main {
 
 }
 
-.name-title__desc{
+
+.name-title  {
+  display: flex;
+  align-items: center;
+  font-size: clamp(12px, 9vw, 6rem);
+  font-weight: bold;
+  height: 1.5em;
+  font-family: AcornBold;
+  font-style: italic;
+}
+
+.firt-part-title {
+  font-size: clamp(12px, 9vw, 6rem);
+  margin-right: .3em;
+}
+
+.title-text-animation {
+  display: flex;
+}
+.writing-bar {
+  display: flex;
+  width: 3px;
+  height: clamp(12px, 9vw, 6rem);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  transform: rotateZ("10deg");
+  animation: bar-animation 1s ease infinite;
+}
+
+
+.text-description{
   margin-bottom: 3rem;
   font-weight: 100;
   font-size: 1.2rem;
@@ -313,55 +348,18 @@ footer svg:hover {
   transform: scale(2);
 }
 
-@font-face {
-  font-family: "AcornBold";
-  src: url(acorn/Acorn-Bold.otf) format('opentype');
-}
 
-@font-face {
-  font-family: "AcornLight";
-  src: url(acorn/Acorn-ExtraLight.otf) format('opentype');
-}
-
-.name-title {
-  font-size: clamp(12px, 9vw, 6rem);
-  margin-right: .3em;
-}
-
-.typewriter {
-  display: flex;
-  align-items: center;
-  font-size: clamp(12px, 9vw, 6rem);
-  font-weight: bold;
-  height: 1.5em;
-  font-family: AcornBold;
-  font-style: italic;
-}
-.content-text-animation {
-  display: flex;
-}
-.writing-bar {
-  display: flex;
-  width: 3px;
-  height: clamp(12px, 9vw, 6rem);
-  margin-left: 20px;
-  margin-bottom: 20px;
-  background-color: white;
-  transform: rotateZ("10deg");
-  animation: bar-animation 1s ease infinite;
-}
-
-.info{
+.info-container{
   flex: 1;
   animation: home-page 2s forwards;
 }
 
-.info a {
+.info-container a {
   text-decoration: none;
   color: currentColor;
 }
 
-.animated-button {
+.about-me-button{
   position: relative;
   display: flex;
   align-items: center;
@@ -380,7 +378,7 @@ footer svg:hover {
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button svg {
+.about-me-button svg {
   position: absolute;
   width: 24px;
   fill: rgb(255, 255, 255);
@@ -388,15 +386,15 @@ footer svg:hover {
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button .arr-1 {
+.about-me-button .arr-1 {
   right: 16px;
 }
 
-.animated-button .arr-2 {
+.about-me-button .arr-2 {
   left: -25%;
 }
 
-.animated-button .circle {
+.about-me-button .circle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -409,41 +407,41 @@ footer svg:hover {
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button .text {
+.about-me-button .text {
   position: relative;
   z-index: 1;
   transform: translateX(-12px);
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button:hover {
+.about-me-button:hover {
   box-shadow: 0 0 0 12px transparent;
   color: #212121;
   border-radius: 30px;
 }
 
-.animated-button:hover .arr-1 {
+.about-me-button:hover .arr-1 {
   right: -25%;
 }
 
-.animated-button:hover .arr-2 {
+.about-me-button:hover .arr-2 {
   left: 16px;
 }
 
-.animated-button:hover .text {
+.about-me-button:hover .text {
   transform: translateX(12px);
 }
 
-.animated-button:hover svg {
+.about-me-button:hover svg {
   fill: #212121;
 }
 
-.animated-button:active {
+.about-me-button:active {
   scale: 0.95;
   box-shadow: 0 0 0 4px rgb(164, 163, 164);
 }
 
-.animated-button:hover .circle {
+.about-me-button:hover .circle {
   width: 220px;
   height: 220px;
   opacity: 1;
@@ -484,14 +482,14 @@ footer svg:hover {
 }
 
 
-.about-work{
+.info-footer{
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
 @media (max-width: 580px) {
-  .about-work{
+  .info-footer{
     flex-direction: column;
     align-items: center;
   }

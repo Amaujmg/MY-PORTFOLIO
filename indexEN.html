@@ -2,10 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="img/A_icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/Amauj_icon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
-    <title>Amauj´s Portfolio</title>
+    <title>Amauj's Portfolio</title>
     <script defer src="main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,10 +14,9 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <!-- background -->
-    <div class="area-index">
+    <!-- background Animation-->
+    <div class="background-index">
       <ul class="circles">
         <li></li>
         <li></li>
@@ -32,60 +31,80 @@
       </ul>
     </div>
 
+    <!-- Nav Section -->
     <nav>
-      <a href="indexEN.html">
-        <img class="logo-Home" src="img/A.png" alt="">
-        </a>
+      <a href="index.html">
+        <img class="logo-Home" src="img/AmaujHome.png" alt="Amauj Icon Home" />
+      </a>
       <ul>
         <li>
-          <a href="projectsEN.html">Projects</a>
+          <a href="projects.html">Projects</a>
         </li>
         <li>
-          <a href="about_meEN.html">About me</a>
+          <a href="about_me.html">About Me</a>
         </li>
         <li>
-          <a class="change-language" href="index.html"
-            ><B>ES</B>
-            <img src="img/ESP.webp" alt="" />
+          <a class="change-language" href="index.html">
+            <strong>ES</strong> <img src="img/languageES.webp" alt="En icon" />
           </a>
         </li>
       </ul>
     </nav>
 
     <main>
-      <section class="info">
-        <div class="typewriter">
-          <h1 class="name-title">Hi! I´m</h1>
-            <div class="content-text-animation"></div>
-          <div class="writing-bar"></div>
-        </div>
+      <section class="info-container">
 
-        <section class="name-title__desc">
-        <p>
-          +1 year of experience. Enthusiastic <strong>Software Developer and Data Analyst </strong> specialized in user experience and web interfaces.
-        </p>
-      </section>
-      
-        <div class="about-work">
+        <header class="name-title ">
+
+            <h1 class="firt-part-title">
+              Hi! I'm
+            </h1>
+
+            <div class="title-text-animation">
+            </div>
+
+            <div class="writing-bar"
+            </div>
+          
+        </header>
+
+        <section class="text-description">
+          <p>
+            +1 year of experience. Enthusiastic <strong>Software Developer and Data Analyst </strong> specialized in user experience and web interfaces.
+          </p>
+        </section>
+
+        <section class="info-footer">
           <a href="about_me.html">
-            <button class="animated-button">
-              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+            <button class="about-me-button">
+              <svg
+                viewBox="0 0 24 24"
+                class="arr-2"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                 ></path>
               </svg>
               <span class="text">More about me</span>
               <span class="circle"></span>
-              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                viewBox="0 0 24 24"
+                class="arr-1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                 ></path>
               </svg>
             </button>
           </a>
-          <div class="available-work" href="">Available to work</div>
-        </div>
+          <div class="available-work" href="">
+            Available to work
+          </div>
       </section>
+
+    </section>
     </main>
 
     <footer>
@@ -103,9 +122,7 @@
       </a>
 
       <!-- ICONO LINKEDIN  -->
-      <a
-        href="https://www.linkedin.com/in/juan-manuel-morales-gonzalez-a2ba7522b/"
-        target="_blank">
+      <a href="https://www.linkedin.com/in/juan-manuel-morales-gonzalez-a2ba7522b/"target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -130,6 +147,7 @@
         </svg>
       </a>
     </footer>
-    
+
   </body>
+
 </html>

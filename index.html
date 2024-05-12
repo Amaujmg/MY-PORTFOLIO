@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="img/A_icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/Amauj_icon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
     <title>Amauj Portafolio</title>
@@ -16,8 +16,8 @@
   </head>
 
   <body>
-    <!-- background -->
-    <div class="area-index">
+    <!-- background Animation-->
+    <div class="background-index">
       <ul class="circles">
         <li></li>
         <li></li>
@@ -32,9 +32,10 @@
       </ul>
     </div>
 
+    <!-- Nav Section -->
     <nav>
       <a href="index.html">
-        <img class="logo-Home" src="img/A.png" alt="" />
+        <img class="logo-Home" src="img/AmaujHome.png" alt="Amauj Icon Home" />
       </a>
       <ul>
         <li>
@@ -44,34 +45,40 @@
           <a href="about_me.html">Sobre mi</a>
         </li>
         <li>
-          <a class="change-language" href="indexEN.html"
-            ><b>EN</b>
-            <img src="img/EN.webp" alt="" />
+          <a class="change-language" href="indexEN.html">
+            <strong>EN</strong> <img src="img/languageEN.webp" alt="En icon" />
           </a>
         </li>
       </ul>
     </nav>
 
     <main>
-      <section class="info">
-        <div class="typewriter">
-          <h1 class="name-title">Hey! Soy</h1>
+      <section class="info-container">
 
-          <div class="content-text-animation"></div>
+        <header class="name-title ">
 
-          <div class="writing-bar"></div>
-        </div>
+            <h1 class="firt-part-title">
+              Hey! Soy
+            </h1>
 
-        <section class="name-title__desc">
-        <p>
-          +1 año de experiencia. <strong>Desarrollador de software y Analista de datos </strong> entusiasta especializado en experiencia de
-          usuario e interfaces web.
-        </p>
-      </section>
+            <div class="title-text-animation">
+            </div>
 
-        <div class="about-work">
+            <div class="writing-bar"
+            </div>
+          
+        </header>
+
+        <section class="text-description">
+          <p>
+            +1 año de experiencia.<strong>Desarrollador de software y Analista de datos </strong>
+            entusiasta especializado en experiencia de usuario e interfaces web.
+          </p>
+        </section>
+
+        <section class="info-footer">
           <a href="about_me.html">
-            <button class="animated-button">
+            <button class="about-me-button">
               <svg
                 viewBox="0 0 24 24"
                 class="arr-2"
@@ -94,9 +101,12 @@
               </svg>
             </button>
           </a>
-          <div class="available-work" href="">Disponible para trabajar</div>
-        </div>
+          <div class="available-work" href="">
+            Disponible para trabajar
+          </div>
       </section>
+
+    </section>
     </main>
 
     <footer>
@@ -114,10 +124,7 @@
       </a>
 
       <!-- ICONO LINKEDIN  -->
-      <a
-        href="https://www.linkedin.com/in/juan-manuel-morales-gonzalez-a2ba7522b/"
-        target="_blank"
-      >
+      <a href="https://www.linkedin.com/in/juan-manuel-morales-gonzalez-a2ba7522b/"target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -142,5 +149,6 @@
         </svg>
       </a>
     </footer>
+
   </body>
 </html>
